@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    /**
+     * Execute {{ class }}.
+     *
+     * @return
+     */
+    public function execute()
+    {
+        //
+
+        return;
+    }
+}

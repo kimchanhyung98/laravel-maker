@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kimchanhyung98\\Skeleton\\": "src/"
+            "Kimchanhyung98\\LaravelMaker\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kimchanhyung98\\Skeleton\\Tests\\": "tests/",
+            "Kimchanhyung98\\LaravelMaker\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,11 +73,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kimchanhyung98\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "Kimchanhyung98\\Skeleton\\Facades\\Skeleton"
-            }
+                "Kimchanhyung98\\LaravelMaker\\MakerServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

@@ -29,7 +29,7 @@ php artisan vendor:publish --tag="laravel-maker-views"
 ## Usage
 
 ```php
-$variable = new Kimchanhyung98\Skeleton();
+$variable = new Kimchanhyung98\LaravelMaker();
 echo $variable->echoPhrase('Hello, Kimchanhyung98!');
 ```
 
