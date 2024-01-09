@@ -32,7 +32,7 @@ class ActionCommand extends GeneratorCommand
      */
     protected function getStub(): string
     {
-        return __DIR__.'/Stubs/action.stub';
+        return __DIR__.'/../Stubs/action.stub';
     }
 
     /**

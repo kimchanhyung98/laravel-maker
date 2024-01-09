@@ -32,7 +32,8 @@ class ServiceCommand extends GeneratorCommand
      */
     protected function getStub(): string
     {
-        return __DIR__.'/Stubs/service.stub';
+        // @todo get stub from config
+        return __DIR__.'/../Stubs/service.stub';
     }
 
     /**
@@ -42,6 +43,7 @@ class ServiceCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
+        // @todo get namespace from config
         return $rootNamespace.'\Services';
     }
 }
