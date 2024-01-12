@@ -13,24 +13,20 @@ You can install the package via composer:
 composer require kimchanhyung98/laravel-maker
 ```
 
+<!--
 This is the contents of the published config file:
 
 ```php
 return [
 ];
 ```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-maker-views"
-```
+-->
 
 ## Usage
 
-```php
-$variable = new Kimchanhyung98\LaravelMaker();
-echo $variable->echoPhrase('Hello, Kimchanhyung98!');
+```bash
+php artisan make:action SampleAction
+php artisan make:service SampleService 
 ```
 
 ## Testing
