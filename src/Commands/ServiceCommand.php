@@ -2,9 +2,7 @@
 
 namespace Kimchanhyung98\LaravelMaker\Commands;
 
-use Illuminate\Console\GeneratorCommand;
-
-class ServiceCommand extends GeneratorCommand
+class ServiceCommand extends MakeCommand
 {
     /**
      * The type of class being generated.
@@ -26,24 +24,4 @@ class ServiceCommand extends GeneratorCommand
      * @var string|null
      */
     public $description = 'Make a new service class';
-
-    /**
-     * Get the stub file for the generator.
-     */
-    protected function getStub(): string
-    {
-        // @todo get stub from config
-        return __DIR__.'/../Stubs/service.stub';
-    }
-
-    /**
-     * Get the default namespace for the class.
-     *
-     * @param  string  $rootNamespace
-     */
-    protected function getDefaultNamespace($rootNamespace): string
-    {
-        // @todo get namespace from config
-        return $rootNamespace.'\Services';
-    }
 }
