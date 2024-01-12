@@ -10,7 +10,7 @@
 You can install the package via composer:
 
 ```bash
-composer require kimchanhyung98/laravel-maker
+composer require kimchanhyung98/laravel-maker --dev
 ```
 
 <!--
