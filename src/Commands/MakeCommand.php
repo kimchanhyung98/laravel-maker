@@ -12,7 +12,7 @@ class MakeCommand extends GeneratorCommand
      */
     protected function getStub(): string
     {
-        return config('maker.'.Str::lower($this->type).'.stub');
+        return config('maker.'.Str::lower($this->type).'.stub', __DIR__.'/Stubs/'.$this->type.'.stub');
     }
 
     /**

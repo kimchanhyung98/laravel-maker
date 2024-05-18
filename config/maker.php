@@ -4,10 +4,10 @@
 return [
     'action' => [
         'namespace' => 'App\Actions',
-        'stub' => __DIR__.'/../stubs/action.stub',
+        // 'stub' => __DIR__.'/../stubs/action.stub',
     ],
     'service' => [
         'namespace' => 'App\Services',
-        'stub' => __DIR__.'/../stubs/service.stub',
+        // 'stub' => __DIR__.'/../stubs/service.stub',
     ],
 ];
