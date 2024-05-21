@@ -1,28 +1,13 @@
 <?php
 
-namespace Kimchanhyung98\LaravelMaker\Tests;
+use function Pest\Laravel\artisan;
 
-use Kimchanhyung98\LaravelMaker\MakerServiceProvider;
-use Orchestra\Testbench\TestCase as Orchestra;
+it('executed artisan make:action command', function () {
+    artisan('make:action', ['name' => 'SampleAction'])->assertExitCode(0);
+    expect(file_exists(app_path('Actions/SampleAction.php')))->toBeTrue();
+});
 
-class MakeTest extends Orchestra
-{
-    protected function getPackageProviders($app): array
-    {
-        return [
-            MakerServiceProvider::class,
-        ];
-    }
-
-    public function test_artisan_make_action_command(): void
-    {
-        $this->artisan('make:action SampleAction')->assertSuccessful();
-        $this->assertFileExists(app_path('Actions/SampleAction.php'));
-    }
-
-    public function test_artisan_make_service_command(): void
-    {
-        $this->artisan('make:service SampleService')->assertSuccessful();
-        $this->assertFileExists(app_path('Services/SampleService.php'));
-    }
-}
+it('executed artisan make:service command', function () {
+    artisan('make:service', ['name' => 'SampleService'])->assertExitCode(0);
+    expect(file_exists(app_path('Services/SampleService.php')))->toBeTrue();
+});
